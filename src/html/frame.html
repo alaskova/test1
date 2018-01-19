@@ -1,0 +1,21 @@
+<!doctype HTML>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+    var frame = document.createElement('iframe');
+    frame.src = "http://ads.eurogrand.com/redirect.aspx?pid=17213278&lpid=1485379745&bid=1485897945";
+    frame.height = "900";
+    frame.width = "100%";
+    console.log(frame);
+    document.body.appendChild(frame);
+    frame.onload = function(){
+        var frameContext = frame.contentWindow.document;
+        var btn = frameContext.getElementsByClassName("buttonStl")[0];
+        btn.click();
+    }
+</script>
+</body>
+</html>
